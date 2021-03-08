@@ -26,10 +26,10 @@ if (number >= 2) {
 
 
 // 1. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We create a variable called 'name' and set it's value to 'Dane' as a string.
+// Next we see if name is an exact match to 'Mary' to console.log 'Hi, Mary!'
+// We find that name is not an exact match to 'Mary', so
+// we console.log 'How do you do?'
 
 //CODE
 /*
@@ -45,10 +45,12 @@ if (name === 'Mary') {
 */
 
 // 2. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// First we create a variable called secret and do not assign it a value.
+// Next we create a variable called code and assign it the value of 123 as a number.
+// code is an exact match to number 123, the new value of secret is string 'super',
+// and new value of code is 246.
+//code is not an greater than 250 therefore the value of secret does not change.
+//We console.log 'super'
 
 //CODE
 /*
@@ -70,10 +72,13 @@ console.log(secret)
 */
 
 // 3. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We assign variable isStudent boolean value true, variable age number value 34, 
+// variable zip number value 55407
+// isStudent is an exact match to true however zip is not greater than 80000, 
+// we will NOT console.log `You're a student on the West Coast!`
+// isStudent is not an exact match to false nor is age less than 30,
+// we will NOT console.log 'What are your hobbies?'
+//isStudent IS an exact match to true, we will console.log 'Welcome to Prime'
 
 //CODE
 /*
@@ -130,10 +135,14 @@ if (number >= 2) {
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
 /*
+//ERROR- colorOne is set to red, colorTwo is set to blue
+//CORRECTION- colorOne should be set to blue, colorTwo should be set to red per instructions.
 let colorOne = 'red';
 let colorTwo = 'blue';
 let mix = true;
 
+//ERROR- only colorOne value changed to string value 'purple'.
+//CORRECTION- colorOne and colorTwo will be converted to string value 'purple'
 if (mix === true) {
   colorOne = 'purple';
 }
@@ -144,9 +153,17 @@ if (mix === true) {
 // -- they are so we console.log 'throw away the food!'
 
 /*
+
+//ERROR- keyword time is declared as a constant.
+//CORRECTION- keyword time must be declared as a variable per the instructions.
+// let time = 4;
 let temp = 40;
 const time = 4;
 
+
+//ERROR- Compound conditional is declared that either condition can be true.
+//CORRECTION- Compound Condtion must be declared as both conditions must be true 
+ //(temp > 39 && time >= 4) 
 if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
 }
@@ -157,12 +174,21 @@ if (temp > 39 || time >= 4) {
 // -- it is, so we console.log 'enter'.
 
 /*
+//ERROR- keyword minAge is delcared as a constant.
+//CORRECTION- let minAge = 21;
 let age = 21;
 const minAge = 21;
 
+//ERROR- condition reads if minAge is less than or equal to age
+//CORRECTION- if(age >= minAge)
 if(minAge <= age) {
+//ERROR- console.log reads no entry for fulfilled condition
+//CORRECTION- console.log must read 'enter' for fulfilled condition
   console.log('no entry');
-} else {
+} 
+ERROR- else condition included
+CORRECTION- remove else condtional as if-else conditional was not in desctiption.
+else {
   console.log('enter');
 }
 */
